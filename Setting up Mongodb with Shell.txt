@@ -1,0 +1,14 @@
+Setting up Mongodb with Shell
+
+1) Download Mongodb and Mongodb database tools
+2) ADD path of enviornment variables
+3) Start Mongod in cmd
+4) Connect to cluster using mongosh "mongodb+srv://cluster0.gbhlcvx.mongodb.net/" --apiVersion 1 --username Dinein (open cmd in another cmd window keep previous window running)
+5) USE this for importing data : mongoimport --uri mongodb+srv://Dinein:<PASSWORD>@cluster0.gbhlcvx.mongodb.net/<DATABASE> --collection <COLLECTION> --type <FILETYPE> --file <FILENAME>
+6) USE this for exporting data : mongoexport --uri mongodb+srv://Dinein:<PASSWORD>@cluster0.gbhlcvx.mongodb.net/<DATABASE> --collection <COLLECTION> --type <FILETYPE> --out <FILENAME>
+
+Replace PASSWORD with the password for the admin user,
+DATABASE with the name of the database you wish to import/export to your cluster,
+and COLLECTION with the name of the collection you wish to import/export to your cluster.
+Replace FILETYPE with "json" or "csv" to specify the file type.
+Where applicable, replace FILENAME with the location and name of the output file (for export) or data source (for import).

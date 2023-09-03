@@ -1,0 +1,7 @@
+
+The term 'nodemon' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a    
+path was included, verify that the path is correct and try again.
+For this error install nodemon globally : npm install -g nodemon
+
+npm\nodemon.ps1 cannot be loaded because running scripts is disabled on this system.
+For this error : Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
